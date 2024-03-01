@@ -1,0 +1,185 @@
+/*
+	Name: Hariansh Choudhary
+	File: style.css
+	Date: 23 February 2024
+	Description: The CSS establish the layout and styling for the homepage of an 
+               imaginary community college. This CSS will be appended to refine 
+               the page's appearance and functionality.
+	*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* font face */
+
+@font-face {
+  font-family: 'cantata_oneregular';
+  src: url('cantataone-regular-webfont.woff2') format('woff2'),
+       url('cantataone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; 
+
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('opensans-bold-webfont.woff2') format('woff2'),
+       url('opensans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  font-family: 'cantata_oneregular', serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: 'open_sansbold', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* general text style */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+}
+
+/* styling the link */
+
+a {
+  outline: none;
+}
+
+/* external icon */
+
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+}
+
+/* colour, visited */
+
+a:link, a:visited {
+  color: #a66;
+}
+
+/* focus, hover */
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* designing the links */
+a:active {
+  color: transparent;
+  text-shadow: 0px 0px 1px #26d8d8,
+               0px 0px 2px #26d8d8,
+               0px 0px 3px black,
+               0px 0px 4px black;
+}
+
+/* editing the list */
+
+ul, ol {
+  margin: 1.6rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+/* navigation menu */
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid #a66;
+  border-radius: 5px;
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
+}
+
